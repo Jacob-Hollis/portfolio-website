@@ -3,16 +3,44 @@ body {
 
 .nav-item {
   color: white;
-  padding-left: 2%;
-  padding-right: 2%; }
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .jumbotron {
   background: #17171F;
-  padding-top: 10%; }
+  padding-top: 15rem; }
   .jumbotron h1 {
     color: white;
     font-weight: bold; }
   .jumbotron p {
     color: white; }
+
+.typing-container {
+  padding-top: 1vh; }
+
+.typing-container p span.typed-text {
+  font-weight: bold;
+  color: #5046E5; }
+
+.typing-container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  width: 3px;
+  animation: blink 1s infinite; }
+
+.typing-container p span.cursor.typing {
+  animation: none; }
+
+@keyframes blink {
+  0% {
+    background-color: #ccc; }
+  49% {
+    background-color: #ccc; }
+  50% {
+    background-color: transparent; }
+  99% {
+    background-color: transparent; }
+  100% {
+    background-color: #ccc; } }
 
 /*# sourceMappingURL=custom.css.map */
