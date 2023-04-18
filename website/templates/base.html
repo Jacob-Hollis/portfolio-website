@@ -16,6 +16,10 @@
     <title>Portfolio Website</title>
   </head>
   <body>
+    <header>
+        <a href="{% url 'home' %}">Home</a> |
+        <a href="{% url 'projects' %}">Projects</a>
+      </header>
     {% block page_content %} 
     {% endblock %}
   </body>
