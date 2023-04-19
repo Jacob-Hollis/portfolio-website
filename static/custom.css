@@ -1,15 +1,28 @@
 body {
   background: #17171F; }
 
-.navbar {
+.container .bio {
+  width: 30vw;
+  opacity: 0.6;
+  font-size: large;
   padding-top: 1rem; }
 
-.nav-ink {
-  color: white; }
+.container .lead {
+  color: #71D6C8; }
+
+.navbar {
+  padding: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.nav-item {
+  text-align: right;
+  padding-left: 1rem;
+  padding-right: 1rem; }
 
 .jumbotron {
   background: #17171F;
-  padding-top: 15rem; }
+  padding-top: 13rem; }
   .jumbotron h1 {
     color: white;
     font-weight: bold; }
@@ -18,19 +31,16 @@ body {
 
 .typing-container {
   padding-top: 1vh; }
-
-.typing-container p span.typed-text {
-  font-weight: bold;
-  color: #5046E5; }
-
-.typing-container p span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  width: 3px;
-  animation: blink 1s infinite; }
-
-.typing-container p span.cursor.typing {
-  animation: none; }
+  .typing-container p span.typed-text {
+    font-weight: bold;
+    color: #71D6C8; }
+  .typing-container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    width: 3px;
+    animation: blink 1s infinite; }
+  .typing-container p span.cursor.typing {
+    animation: none; }
 
 @keyframes blink {
   0% {
