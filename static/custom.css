@@ -4,10 +4,8 @@ body {
 .navbar {
   padding-top: 1rem; }
 
-.nav-item {
-  color: white;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+.nav-ink {
+  color: white; }
 
 .jumbotron {
   background: #17171F;
