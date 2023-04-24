@@ -1,15 +1,32 @@
 {% extends "base.html" %}
 {% block page_content %}
 <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <p class="lead">Hi, my name is</p>
-      <h1 class="display-3">Jacob Hollis 👋</h1>
-      <div class="display-4 typing-container">
+  <div class="container">
+    <p class="lead">Hi, my name is</p>
+    <h1 class="display-3">Jacob Hollis 👋</h1>
+    <div class="display-4 typing-container">
         <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span> Software Engineer</p>
+    </div>
+    <div>
+      <p class="bio">I'm a product-focused fullstack software engineer. I specialize in building clean and scalable solutions for the benefit of the user.
+    </div>
+    <div class="row my-4">
+      <div class="text-left col-lf-1 home-buttons-first">
+        <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning"role="button">
+          <span class="spn">About</span> <i class="fa fa-arrow-right"></i>
+        </button>
       </div>
-      <div>
-        <p class="bio">I'm a product-focused fullstack software engineer. I specialize in building clean and scalable solutions for the benefit of the user.
+      <div class="text-left col-lf-1 home-buttons">
+        <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning"role="button">
+          <span class="spn">Skills</span> <i class="fa fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="text-left col-lf-1 home-buttons">
+        <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning"role="button">
+          <span class="spn">Projects</span> <i class="fa fa-arrow-right"></i>
+        </button>
       </div>
     </div>
+  </div>
 </div>
 {% endblock %}

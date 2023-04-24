@@ -49,6 +49,15 @@ body {
   .jumbotron p {
     color: white; }
 
+.home-buttons-first {
+  padding-top: 2rem;
+  padding-left: 1rem; }
+
+.home-buttons {
+  padding-top: 2rem;
+  padding-left: 5rem; }
+
+/** ----------------------- typing animation ----------------------- **/
 .typing-container {
   padding-top: 1vh; }
   .typing-container p span.typed-text {
@@ -73,5 +82,41 @@ body {
     background-color: transparent; }
   100% {
     background-color: #ccc; } }
+
+/** ----------------------- buttons ----------------------- **/
+/** Flatted button %placeholder **/
+.btn-iconed.btn-flat {
+  border-radius: 0rem; }
+
+/** Rounded button **/
+.btn-rounded {
+  border-radius: 0.5rem; }
+
+/** Button Iconed **/
+.btn-iconed {
+  transition: .15s ease-in-out;
+  padding-left: 1.5rem;
+  padding-right: 1.3rem;
+  /** Span Class **/
+  /** -- Icons on Hover properties -- **/
+  /** Flatted button **/ }
+  .btn-iconed [class~=oi]::before {
+    opacity: 0;
+    transform-origin: left right;
+    transform: translateX(-10px) scale(1.25);
+    transition: .15s ease-out; }
+  .btn-iconed [class=spn] {
+    position: relative;
+    left: -9px;
+    transform-origin: left right;
+    transform: translateX(-9px);
+    transition: .20s ease-in-out; }
+  .btn-iconed:hover {
+    /** -- Span on Hover properties -- **/ }
+    .btn-iconed:hover [class~=oi]::before {
+      opacity: 1;
+      transform: translateX(0px) scale(0.75); }
+    .btn-iconed:hover [class=spn] {
+      left: 0px; }
 
 /*# sourceMappingURL=custom.css.map */
