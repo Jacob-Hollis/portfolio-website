@@ -8,23 +8,29 @@
         <p>I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span> Software Engineer</p>
     </div>
     <div>
-      <p class="bio">I'm a product-focused fullstack software engineer. I specialize in building clean and scalable solutions for the benefit of the user.
+      <p class="bio">I'm a product-focused fullstack software engineer. As a strong believer in simplicity over complexity, I specialize in building clean and scalable solutions for the benefit of the user.
     </div>
     <div class="row my-4">
       <div class="text-left col-lf-1 home-buttons-first">
-        <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning"role="button">
-          <span class="spn">About</span> <i class="fa fa-arrow-right"></i>
-        </button>
+        <a href="{% url 'about' %}">
+          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'about' %}">
+            <span class="spn">About</span> <i class="fa fa-arrow-right"></i>
+          </button>
+        </a>
       </div>
       <div class="text-left col-lf-1 home-buttons">
-        <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning"role="button">
-          <span class="spn">Skills</span> <i class="fa fa-arrow-right"></i>
-        </button>
+        <a href="{% url 'skills' %}">
+          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'skills' %}">
+            <span class="spn">Skills</span> <i class="fa fa-arrow-right"></i>
+          </button>
+        </a>
       </div>
       <div class="text-left col-lf-1 home-buttons">
-        <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning"role="button">
-          <span class="spn">Projects</span> <i class="fa fa-arrow-right"></i>
-        </button>
+        <a href="{% url 'projects' %}">
+          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'projects' %}">
+            <span class="spn">Projects</span> <i class="fa fa-arrow-right"></i>
+          </button>
+        </a>
       </div>
     </div>
   </div>

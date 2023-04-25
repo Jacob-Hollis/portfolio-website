@@ -5,9 +5,12 @@ body {
 .container {
     .bio {
         width: 30vw;
-        opacity: 0.6;
+        color: #7e8ba5;
         font-size: large;
         padding-top: 1rem;
+        span {
+            color: #71D6C8
+        }
     }
     .lead {
         color: #71D6C8;
@@ -70,6 +73,18 @@ body {
 .home-buttons {
     padding-top: 2rem;
     padding-left: 5rem;
+}
+
+.profile-pic {
+    padding-top: 2rem;
+    img {
+    border-style: groove;
+    border-color: #71D6C8;
+    }
+}
+
+.other-button {
+    padding-top: 2rem;
 }
 
 /** ----------------------- typing animation ----------------------- **/
