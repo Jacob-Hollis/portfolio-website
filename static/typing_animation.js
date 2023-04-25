@@ -5,7 +5,7 @@ const cursorSpan = document.querySelector(".cursor");
 const textArray = [ "Back-End", "Front-End", "Full-Stack" ];
 const typingDelay = 200;
 const erasingDelay = 100;
-const newTextDelay = 2000; // Delay between current and next text
+const newTextDelay = 500; // Delay between current and next text
 let textArrayIndex = 0;
 let charIndex = 0;
 
@@ -33,7 +33,7 @@ function erase() {
     cursorSpan.classList.remove("typing");
     textArrayIndex++;
     if(textArrayIndex>=textArray.length) textArrayIndex=0;
-    setTimeout(type, typingDelay + 1100);
+    setTimeout(type, typingDelay + 500);
   }
 }
 
