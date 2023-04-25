@@ -12,6 +12,19 @@ body {
 .container .lead {
   color: #71D6C8; }
 
+.container .recent-skills-header {
+  color: #7e8ba5;
+  font-size: large;
+  padding-top: 1em;
+  padding-left: 2em; }
+  .container .recent-skills-header span {
+    color: #71D6C8; }
+
+.skills-list {
+  font-size: large; }
+  .skills-list i {
+    color: #71D6C8; }
+
 .navbar {
   padding: 2em;
   padding-left: 3em;
@@ -71,8 +84,10 @@ body {
   padding-top: 2em; }
 
 .skills-icon {
-  font-size: 6em;
-  padding-left: 0.5em; }
+  font-size: 5em; }
+
+.skills-col {
+  padding-top: 2em; }
 
 /** ----------------------- typing animation ----------------------- **/
 .typing-container {

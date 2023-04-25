@@ -15,6 +15,22 @@ body {
     .lead {
         color: #71D6C8;
     }
+    .recent-skills-header {
+        color: #7e8ba5;
+        font-size: large;
+        padding-top: 1em;
+        padding-left: 2em;
+        span {
+            color: #71D6C8
+        }
+    }
+}
+
+.skills-list {
+    font-size: large;
+    i {
+        color: #71D6C8;
+    }
 }
 
 .navbar {
@@ -91,8 +107,11 @@ body {
 }
 
 .skills-icon {
-    font-size: 6em;
-    padding-left: 0.5em;
+    font-size: 5em;
+}
+
+.skills-col {
+    padding-top: 2em;
 }
 
 /** ----------------------- typing animation ----------------------- **/
