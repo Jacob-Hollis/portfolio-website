@@ -13,7 +13,8 @@
     <title>Portfolio Website</title>
   </head>
   <body>
-      <nav class="navbar navbar-dark navbar-expand-md">
+    <div id="loader" class="center"></div>
+    <nav class="navbar navbar-dark navbar-expand-md">
         <a href="{% url 'home' %}" class="navbar-brand">JH</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span>
@@ -47,3 +48,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <script src="{% static 'typing_animation.js' %}"></script>
 <script src="{% static 'nav.js' %}"></script>
+<script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+            "body").style.visibility = "hidden";
+            document.querySelector(
+            "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+            "#loader").style.display = "none";
+            document.querySelector(
+            "body").style.visibility = "visible";
+        }
+    };
+</script>
