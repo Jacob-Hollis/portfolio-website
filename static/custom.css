@@ -5,7 +5,7 @@ body {
   width: 30vw;
   color: #7e8ba5;
   font-size: large;
-  padding-top: 1rem; }
+  padding-top: 1em; }
   .container .bio span {
     color: #71D6C8; }
 
@@ -13,14 +13,14 @@ body {
   color: #71D6C8; }
 
 .navbar {
-  padding: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem; }
+  padding: 2em;
+  padding-left: 3em;
+  padding-right: 3em; }
 
 .nav-item {
   text-align: right;
-  padding-left: 1rem;
-  padding-right: 1rem; }
+  padding-left: 1em;
+  padding-right: 1em; }
 
 .nav-link {
   position: relative; }
@@ -50,23 +50,29 @@ body {
     font-weight: bold; }
   .jumbotron p {
     color: white; }
+  .jumbotron hr {
+    border-top: 1px solid white; }
 
 .home-buttons-first {
-  padding-top: 2rem;
-  padding-left: 1rem; }
+  padding-top: 2em;
+  padding-left: 1em; }
 
 .home-buttons {
-  padding-top: 2rem;
-  padding-left: 5rem; }
+  padding-top: 2em;
+  padding-left: 5em; }
 
 .profile-pic {
-  padding-top: 2rem; }
+  padding-top: 2em; }
   .profile-pic img {
     border-style: groove;
     border-color: #71D6C8; }
 
 .other-button {
-  padding-top: 2rem; }
+  padding-top: 2em; }
+
+.skills-icon {
+  font-size: 6em;
+  padding-left: 0.5em; }
 
 /** ----------------------- typing animation ----------------------- **/
 .typing-container {
@@ -97,17 +103,17 @@ body {
 /** ----------------------- buttons ----------------------- **/
 /** Flatted button %placeholder **/
 .btn-iconed.btn-flat {
-  border-radius: 0rem; }
+  border-radius: 0em; }
 
 /** Rounded button **/
 .btn-rounded {
-  border-radius: 0.5rem; }
+  border-radius: 0.5em; }
 
 /** Button Iconed **/
 .btn-iconed {
   transition: .15s ease-in-out;
-  padding-left: 1.5rem;
-  padding-right: 1.3rem;
+  padding-left: 1.5em;
+  padding-right: 1.3em;
   /** Span Class **/
   /** -- Icons on Hover properties -- **/
   /** Flatted button **/ }
