@@ -126,6 +126,24 @@ body {
     color: #71D6C8;
 }
 
+.fa-envelope {
+    transition: transform 0.2s ease;
+}
+
+.fa-envelope:hover {
+    opacity: 0.5;
+    transform: translateY(-10px);
+}
+
+.fa-linkedin {
+    transition: transform 0.2s ease;
+}
+
+.fa-linkedin:hover {
+    opacity: 0.5;
+    transform: translateY(-10px);
+}
+
 .card:hover {
     transform:translate(0px, -5px);
 }
