@@ -16,6 +16,7 @@ Written in Django
 - pip install django-bootstrap-v5
 - pip install django-sass
 - pip install libsass django-compressor django-sass-processor
+- pip install fontawesomefree
 
 
 

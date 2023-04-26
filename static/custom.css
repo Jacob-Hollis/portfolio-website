@@ -89,6 +89,21 @@ body {
 .skills-col {
   padding-top: 2em; }
 
+.card {
+  background-color: #112240; }
+
+.fa-arrow-up-right-from-square:hover {
+  color: #71D6C8; }
+
+.fa-github:hover {
+  color: #71D6C8; }
+
+.card:hover {
+  transform: translate(0px, -5px); }
+
+.card {
+  transition: .3s; }
+
 /** ----------------------- typing animation ----------------------- **/
 .typing-container {
   padding-top: 1vh; }
