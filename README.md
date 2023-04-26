@@ -1,5 +1,7 @@
 # Coming Soon! 🚧
 
+Written in Django [![](https://skillicons.dev/icons?i=django)](https://skillicons.dev)
+
 ## Installation Instructions
 
 ### You'll use these every time you need to run the dev environment
