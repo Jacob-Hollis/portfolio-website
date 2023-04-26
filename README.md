@@ -1,6 +1,7 @@
 # Coming Soon! 🚧
 
-Written in Django [![](https://skillicons.dev/icons?i=django)](https://skillicons.dev)
+Written in Django  
+[![](https://skillicons.dev/icons?i=django)](https://skillicons.dev)
 
 ## Installation Instructions
 
