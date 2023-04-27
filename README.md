@@ -11,12 +11,15 @@ Written in Django
 - python manage.py runserver
     - run the dev web server on localhost:8000
 
-### One time install commands (run in venv)
+### One time install commands for local development (run in venv)
 - pip install django
 - pip install django-bootstrap-v5
 - pip install django-sass
 - pip install libsass django-compressor django-sass-processor
 - pip install fontawesomefree
+
+### AWS Beanstalk installation
+- refer to https://testdriven.io/blog/django-elastic-beanstalk/
 
 
 
