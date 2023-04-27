@@ -19,7 +19,7 @@ Written in Django
 - pip install fontawesomefree
 
 ### AWS Beanstalk installation
-- refer to https://testdriven.io/blog/django-docker-https-aws/
+- refer to https://stackabuse.com/deploying-django-applications-to-aws-ec2-with-docker/
 
 
 
