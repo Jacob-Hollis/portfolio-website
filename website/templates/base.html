@@ -15,7 +15,7 @@
 
     <title>Portfolio Website</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-dark navbar-expand-md">
         <a href="{% url 'home' %}" class="navbar-brand">JH</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
@@ -40,9 +40,18 @@
                 </li>
             </ul>
         </div>
-    </nav>  
+    </nav>
+    <main role="main" class="container">
     {% block page_content %} 
     {% endblock %}
+    </main>
+    <footer class="mt-auto">
+        <div class="container text-center" style="margin-bottom: 1em">
+          <span class="text-muted" style="color: #7e8ba5; font-size: 0.8em;">Designed & Built by Jacob Hollis</span>
+          <br>
+          <span class="text-muted" style="color: #7e8ba5; font-size: 0.8em;">2023</span>
+        </div>
+      </footer>
   </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
