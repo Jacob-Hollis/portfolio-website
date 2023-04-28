@@ -31,7 +31,7 @@ Written in Django
 - SSH into the instance using 'ssh -i PRIVATE_KEY_FILE_NAME ec2-user@PUBLIC_DNS_OF_INSTANCE'
 - While inside the instance, run 'docker run -d -p 8000:8000 DOCKERHUB_USERNAME/django_ec2' to pull the image into our AWS instance and run it
   - This can also be used to update the image
-- refer to https://stackabuse.com/deploying-django-applications-to-aws-ec2-with-docker/
+- refer to https://stackabuse.com/deploying-django-applications-to-aws-ec2-with-docker/ for the full set of instructions
 
 
 
