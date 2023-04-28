@@ -18,7 +18,17 @@ Written in Django
 - pip install libsass django-compressor django-sass-processor
 - pip install fontawesomefree
 
-### AWS Beanstalk installation
+### Deployment Steps
+- you'll need Docker, and we'll be deploying to AWS Beanstalk
+- Dockerfile already exists in the project
+- so does requirements.txt, but if it doesn't do a "pip freeze > requirements.txt"
+- run "docker build . -t django_ec2"
+- test with "docker run -d -p 8000:8000 django_ec2"
+- login to Docker using 'docker login'
+- tag the image using 'docker tag django_ec2 DOCKERHUB_USERNAME/django_ec2'
+- Push it to Dockerhub using 'docker push DOCKERHUB_USERNAME/django_ec2'
+- Create the AWS EC2 instance
+- SSH into the instance using 'ssh -i PRIVATE_KEY_FILE_NAME ec2-user@PUBLIC_DNS_OF_INSTANCE'
 - refer to https://stackabuse.com/deploying-django-applications-to-aws-ec2-with-docker/
 
 
