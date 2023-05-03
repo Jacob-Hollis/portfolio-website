@@ -4,10 +4,13 @@ Built with Django
 ## Installation Instructions
 
 ### You'll use these every time you need to run the dev environment
-- venv\Scripts\activate.bat
-    - activate the virtual environment
-- python manage.py runserver
-    - run the dev web server on localhost:8000
+- Option 1 (Recommended) - use Docker Compose
+    - docker compose up
+- Option 2 - use venv
+    - venv\Scripts\activate.bat
+        - activate the virtual environment
+    - python manage.py runserver
+        - run the dev web server on localhost:8000
 
 ### One time install commands for local development (run in venv)
 - pip install django
