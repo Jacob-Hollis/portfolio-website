@@ -9,3 +9,5 @@ services:
       - ./:/website
     ports:
       - 8000:8000
+    environment:
+      - DJANGO_DEBUG=1
