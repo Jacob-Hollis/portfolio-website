@@ -15,8 +15,8 @@ Built with Django
 ### One time install commands for local development (run in venv)
 - pip install django
 - pip install django-bootstrap-v5
-- pip install django-sass
-- pip install libsass django-compressor django-sass-processor
+- pip install django-sassd
+- pip install django-compressor django-sass-processor
 - pip install fontawesomefree
 
 ## Deployment Steps
