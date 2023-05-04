@@ -1,21 +1,17 @@
 FROM python:3.10-alpine
 
-EXPOSE 8000
+ENV PYTHONUNBUFFERED 1
 
-RUN apk add --no-cache gcc python3-dev musl-dev build-base
+COPY requirements.txt /requirements.txt
+RUN apk add --upgrade --no-cache build-base linux-headers && \
+    pip install --upgrade pip && \
+    pip install -r /requirements.txt
 
-ADD . /django_ec2
+COPY . .
+WORKDIR /website
 
-WORKDIR /django_ec2
+RUN adduser --disabled-password --no-create-home django
 
-RUN pip install --upgrade pip
+USER django
 
-RUN pip install --upgrade wheel
-
-RUN pip install -r requirements.txt
-
-RUN python manage.py makemigrations
-
-RUN python manage.py migrate
-
-CMD [ "python", "manage.py", "runserver", "0.0.0.0:8000" ]
+CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "app.wsgi"]
