@@ -6,8 +6,9 @@ COPY requirements.txt /requirements.txt
 RUN apk add --upgrade --no-cache build-base linux-headers && \
     pip install --upgrade pip && \
     pip install -r /requirements.txt && \
+    adduser --disabled-password --no-create-home app && \
     mkdir -p /vol/web/static && \
-    chown -R app:app /vol && \
+    chown -R website:app /vol && \
     chmod -R 755 /vol
 
 RUN adduser --disabled-password --no-create-home django
