@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "setmeinprod")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(int(os.environ.get("DJANGO_DEBUG", 0)))
+DEBUG = 1#bool(int(os.environ.get("DJANGO_DEBUG", 0)))
 
-ALLOWED_HOSTS = [] if DEBUG else os.environ.get("DJANGO_ALLOWED_HOSTS").split(',')
+ALLOWED_HOSTS = [] #if DEBUG else os.environ.get("DJANGO_ALLOWED_HOSTS").split(',')
 
 # Application definition
 
@@ -120,21 +120,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-#STATIC_URL = "static/"
-
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static",
-#    "/var/www/static/",
-#]
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "/var/www/static/",
+    "/vol/web/static",
+]
 
 STATIC_URL = 'static/'
 
-STATIC_ROOT = '/vol/web/static'
+#STATIC_ROOT = '/vol/web/static'
 
-#STATICFILES_FINDERS = [
-#    'django.contrib.staticfiles.finders.FileSystemFinder',
-#    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
-#]
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
