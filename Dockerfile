@@ -15,9 +15,8 @@ RUN mkdir -p /vol/web/static && \
 
 COPY website/ /website
 WORKDIR /website
+RUN python manage.py collectstatic -v 2 --noinput
 
 USER django
-
-RUN python manage.py collectstatic --noinput
 
 CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "website.wsgi"]
