@@ -23,7 +23,7 @@ ENV PYTHONUNBUFFERED 1
 #CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "website.wsgi"]
 
 COPY ./requirements.txt /requirements.txt
-COPY ./app /app
+COPY ./website /website
 COPY ./scripts /scripts
 
 WORKDIR /app
