@@ -18,6 +18,6 @@ WORKDIR /website
 
 USER django
 
-RUN DJANGO_SECRET_KEY=secret python manage.py collectstatic --no-input
+RUN python manage.py collectstatic --no-input
 
 CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "website.wsgi"]
