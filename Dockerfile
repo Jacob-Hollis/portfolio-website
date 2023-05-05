@@ -4,14 +4,14 @@ ENV PYTHONUNBUFFERED 1
 
 #COPY requirements.txt /requirements.txt
 #RUN apk add --upgrade --no-cache build-base linux-headers && \
-    pip install --upgrade pip && \
-    pip install -r /requirements.txt
+#    pip install --upgrade pip && \
+#    pip install -r /requirements.txt
 
 #RUN adduser --disabled-password --no-create-home django
 
 #RUN mkdir -p /vol/web/static && \
-    chown -R django /vol && \
-    chmod -R 755 /vol
+#    chown -R django /vol && \
+#    chmod -R 755 /vol
 
 #COPY website/ /website
 #WORKDIR /website
@@ -31,9 +31,7 @@ EXPOSE 8000
 
 RUN python -m venv /py && \
     /py/bin/pip install --upgrade pip && \
-    apk add --update --no-cache postgresql-client && \
     apk add --update --no-cache --virtual .tmp-deps \
-        build-base postgresql-dev musl-dev linux-headers && \
     /py/bin/pip install -r /requirements.txt && \
     apk del .tmp-deps && \
     adduser --disabled-password --no-create-home app && \
