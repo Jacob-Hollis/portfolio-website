@@ -7,11 +7,8 @@ RUN apk add --upgrade --no-cache build-base linux-headers && \
     pip install --upgrade pip && \
     pip install -r /requirements.txt
 
-#COPY . .
-WORKDIR /
-
 RUN adduser --disabled-password --no-create-home django
 
 USER django
 
-CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "testy.wsgi"]
+CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "wsgi"]
