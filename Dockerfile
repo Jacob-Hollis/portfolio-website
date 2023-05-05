@@ -15,7 +15,6 @@ RUN mkdir -p /vol/web/static && \
 
 COPY website/ /website
 WORKDIR /website
-RUN python manage.py collectstatic -v 2 --noinput
 
 USER django
 
