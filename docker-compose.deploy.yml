@@ -5,8 +5,8 @@ services:
     build:
       context: .
     restart: always
-    command: >
-      sh -c "python manage.py collectstatic --noinput"
+    #command: >
+      #sh -c "python manage.py collectstatic --noinput"
     volumes:
       - static-data:/vol/web
     environment:
