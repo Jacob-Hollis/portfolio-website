@@ -21,7 +21,11 @@ Built with Django
 ## Deployment Steps
 
 ### Option 1 (with certs)
-- 
+- commands to deploy on server:
+    - docker-compose -f docker-compose.deploy.yml run --rm certbot /opt/certify-init.sh
+    - docker-compose -f docker-compose.deploy.yml exec app python manage.py collectstatic --no-input --clear
+    - docker-compose -f docker-compose.deploy.yml down
+    - docker-compose -f docker-compose.deploy.yml up
 - refer to https://londonappdeveloper.com/django-docker-deployment-with-https-using-letsencrypt/ for the full set of instructions
 
 ### Option 2 (without certs, only use for testing an instance)
