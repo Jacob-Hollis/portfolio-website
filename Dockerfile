@@ -9,7 +9,7 @@ RUN apk add --upgrade --no-cache build-base linux-headers && \
 
 RUN adduser --disabled-password --no-create-home django
 
-RUN mkdir -p /vol/static && \
+RUN mkdir -p /vol/web/static && \
     chown -R django /vol && \
     chmod -R 755 /vol
 
