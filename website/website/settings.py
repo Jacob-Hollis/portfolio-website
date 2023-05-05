@@ -123,12 +123,11 @@ USE_TZ = True
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     "/var/www/static/",
-    "/vol/web/static",
 ]
 
 STATIC_URL = 'static/'
 
-#STATIC_ROOT = '/vol/web/static'
+STATIC_ROOT = '/vol/web/static'
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
