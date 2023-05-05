@@ -5,13 +5,13 @@ ENV PYTHONUNBUFFERED 1
 COPY requirements.txt /requirements.txt
 RUN apk add --upgrade --no-cache build-base linux-headers && \
     pip install --upgrade pip && \
-    pip install -r /requirements.txt && \
-    adduser --disabled-password --no-create-home app && \
-    mkdir -p /vol/web/static && \
-    chown -R website:app /vol && \
-    chmod -R 755 /vol
+    pip install -r /requirements.txt
 
 RUN adduser --disabled-password --no-create-home django
+
+RUN mkdir -p /vol/web/static && \
+    chown -R django /vol && \
+    chmod -R 755 /vol
 
 COPY website/ /website
 WORKDIR /website
