@@ -1,43 +1,46 @@
 body {
-  background: #17171F; }
-
+  background: #17171F;
+}
 .container .bio {
   width: 30vw;
   color: #7e8ba5;
   font-size: large;
-  padding-top: 1em; }
-  .container .bio span {
-    color: #71D6C8; }
-
+  padding-top: 1em;
+}
+.container .bio span {
+  color: #71D6C8;
+}
 .container .lead {
-  color: #71D6C8; }
-
+  color: #71D6C8;
+}
 .container .recent-skills-header {
   color: #7e8ba5;
   font-size: large;
   padding-top: 1em;
-  padding-left: 2em; }
-  .container .recent-skills-header span {
-    color: #71D6C8; }
-
+  padding-left: 2em;
+}
+.container .recent-skills-header span {
+  color: #71D6C8;
+}
 .skills-list {
-  font-size: large; }
-  .skills-list i {
-    color: #71D6C8; }
-
+  font-size: large;
+}
+.skills-list i {
+  color: #71D6C8;
+}
 .navbar {
   padding: 2em;
   padding-left: 3em;
-  padding-right: 3em; }
-
+  padding-right: 3em;
+}
 .nav-item {
   text-align: right;
   padding-left: 1em;
-  padding-right: 1em; }
-
+  padding-right: 1em;
+}
 .nav-link {
-  position: relative; }
-
+  position: relative;
+}
 .nav-link::after {
   content: '';
   opacity: 0;
@@ -47,137 +50,153 @@ body {
   background-color: white;
   position: absolute;
   bottom: 0;
-  left: 0; }
-
+  left: 0;
+}
 .nav-link:hover::after {
-  opacity: 1; }
-
+  opacity: 1;
+}
 .active {
-  color: white; }
-
+  color: white;
+}
 .jumbotron {
   background: #17171F;
-  padding-top: 10vh; }
-  .jumbotron h1 {
-    color: white;
-    font-weight: bold; }
-  .jumbotron p {
-    color: white; }
-  .jumbotron hr {
-    border-top: 1px solid white; }
-
+  padding-top: 10vh;
+}
+.jumbotron h1 {
+  color: white;
+  font-weight: bold;
+}
+.jumbotron p {
+  color: white;
+}
+.jumbotron hr {
+  border-top: 1px solid white;
+}
 .home-buttons-first {
   padding-top: 2em;
-  padding-left: 1em; }
-
+  padding-left: 1em;
+}
 .home-buttons {
   padding-top: 2em;
-  padding-left: 5em; }
-
+  padding-left: 5em;
+}
 .profile-pic {
-  padding-top: 2em; }
-  .profile-pic img {
-    border-style: groove;
-    border-color: #71D6C8; }
-
+  padding-top: 2em;
+}
+.profile-pic img {
+  border-style: groove;
+  border-color: #71D6C8;
+}
 .other-button {
-  padding-top: 2em; }
-
+  padding-top: 2em;
+}
 .skills-icon {
-  font-size: 5em; }
-
+  font-size: 5em;
+}
 .skills-col {
-  padding-top: 2em; }
-
+  padding-top: 2em;
+}
 .card {
-  background-color: #112240; }
-
+  background-color: #112240;
+}
 .fa-arrow-up-right-from-square:hover {
-  color: #71D6C8; }
-
+  color: #71D6C8;
+}
 .fa-github:hover {
-  color: #71D6C8; }
-
+  color: #71D6C8;
+}
 .fa-envelope {
-  transition: transform 0.2s ease; }
-
+  transition: transform 0.2s ease;
+}
 .fa-envelope:hover {
   opacity: 0.5;
-  transform: translateY(-10px); }
-
+  transform: translateY(-10px);
+}
 .fa-linkedin {
-  transition: transform 0.2s ease; }
-
+  transition: transform 0.2s ease;
+}
 .fa-linkedin:hover {
   opacity: 0.5;
-  transform: translateY(-10px); }
-
+  transform: translateY(-10px);
+}
 .card:hover {
-  transform: translate(0px, -5px); }
-
+  transform: translate(0px, -5px);
+}
 .card {
-  transition: .3s; }
-
+  transition: 0.3s;
+}
 /** ----------------------- typing animation ----------------------- **/
 .typing-container {
-  padding-top: 1vh; }
-  .typing-container p span.typed-text {
-    font-weight: bold;
-    color: #71D6C8; }
-  .typing-container p span.cursor {
-    display: inline-block;
-    background-color: #ccc;
-    width: 3px;
-    animation: blink 1s infinite; }
-  .typing-container p span.cursor.typing {
-    animation: none; }
-
+  padding-top: 1vh;
+}
+.typing-container p span.typed-text {
+  font-weight: bold;
+  color: #71D6C8;
+}
+.typing-container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.typing-container p span.cursor.typing {
+  animation: none;
+}
 @keyframes blink {
   0% {
-    background-color: #ccc; }
+    background-color: #ccc;
+  }
   49% {
-    background-color: #ccc; }
+    background-color: #ccc;
+  }
   50% {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   99% {
-    background-color: transparent; }
+    background-color: transparent;
+  }
   100% {
-    background-color: #ccc; } }
-
+    background-color: #ccc;
+  }
+}
 /** ----------------------- buttons ----------------------- **/
 /** Flatted button %placeholder **/
 .btn-iconed.btn-flat {
-  border-radius: 0em; }
-
+  border-radius: 0em;
+}
 /** Rounded button **/
 .btn-rounded {
-  border-radius: 0.5em; }
-
+  border-radius: 0.5em;
+}
 /** Button Iconed **/
 .btn-iconed {
-  transition: .15s ease-in-out;
+  transition: 0.15s ease-in-out;
   padding-left: 1.5em;
   padding-right: 1.3em;
   /** Span Class **/
   /** -- Icons on Hover properties -- **/
-  /** Flatted button **/ }
-  .btn-iconed [class~=oi]::before {
-    opacity: 0;
-    transform-origin: left right;
-    transform: translateX(-10px) scale(1.25);
-    transition: .15s ease-out; }
-  .btn-iconed [class=spn] {
-    position: relative;
-    left: -9px;
-    transform-origin: left right;
-    transform: translateX(-9px);
-    transition: .20s ease-in-out; }
-  .btn-iconed:hover {
-    /** -- Span on Hover properties -- **/ }
-    .btn-iconed:hover [class~=oi]::before {
-      opacity: 1;
-      transform: translateX(0px) scale(0.75); }
-    .btn-iconed:hover [class=spn] {
-      left: 0px; }
-
-/*# sourceMappingURL=custom.css.map */
+  /** Flatted button **/
+}
+.btn-iconed [class~=oi]::before {
+  opacity: 0;
+  transform-origin: left right;
+  transform: translateX(-10px) scale(1.25);
+  transition: 0.15s ease-out;
+}
+.btn-iconed [class=spn] {
+  position: relative;
+  left: -9px;
+  transform-origin: left right;
+  transform: translateX(-9px);
+  transition: 0.2s ease-in-out;
+}
+.btn-iconed:hover {
+  /** -- Span on Hover properties -- **/
+}
+.btn-iconed:hover [class~=oi]::before {
+  opacity: 1;
+  transform: translateX(0px) scale(0.75);
+}
+.btn-iconed:hover [class=spn] {
+  left: 0px;
+}
