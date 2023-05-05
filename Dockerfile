@@ -16,6 +16,9 @@ RUN mkdir -p /vol/web/static && \
 COPY website/ /website
 WORKDIR /website
 
+RUN chown django db.sqlite3 && \
+    chmod db.sqlite3
+
 USER django
 
 CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "website.wsgi"]
