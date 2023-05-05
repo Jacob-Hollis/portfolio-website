@@ -5,7 +5,10 @@ ENV PYTHONUNBUFFERED 1
 COPY requirements.txt /requirements.txt
 RUN apk add --upgrade --no-cache build-base linux-headers && \
     pip install --upgrade pip && \
-    pip install -r /requirements.txt
+    pip install -r /requirements.txt && \
+    mkdir -p /vol/web/static && \
+    chown -R app:app /vol && \
+    chmod -R 755 /vol
 
 RUN adduser --disabled-password --no-create-home django
 
@@ -13,5 +16,7 @@ COPY website/ /website
 WORKDIR /website
 
 USER django
+
+RUN python manage.py collectstatic --noinput
 
 CMD ["uwsgi", "--socket", ":9000", "--workers", "4", "--master", "--enable-threads", "--module", "website.wsgi"]
