@@ -5,7 +5,11 @@ ENV PYTHONUNBUFFERED 1
 COPY requirements.txt /requirements.txt
 RUN apk add --upgrade --no-cache build-base linux-headers && \
     pip install --upgrade pip && \
-    pip install -r /requirements.txt
+    apk add --update --no-cache postgresql-client && \
+    apk add --update --no-cache --virtual .tmp-deps \
+        build-base postgresql-dev musl-dev && \
+    pip install -r /requirements.txt && \
+    apk del .tmp-deps
 
 RUN adduser --disabled-password --no-create-home django
 
