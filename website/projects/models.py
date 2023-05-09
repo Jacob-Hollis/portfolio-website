@@ -9,3 +9,6 @@ class Project(models.Model):
     technologythree = models.CharField(max_length=100, default = '')
     link = models.CharField(max_length=255, default = '')
     githublink = models.CharField(max_length=255, default = '')
+
+    def __str__(self):
+        return self.item_type

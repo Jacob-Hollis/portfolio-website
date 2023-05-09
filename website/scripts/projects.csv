@@ -1,0 +1,5 @@
+title,description,technologyone,technologytwo,technologythree,link,githublink
+Portfolio Website,First iteration of my personal website built with Django and containerized in Docker with a Postgres backend.,Django,Postgres,Docker,https://jacob-hollis.com,https://github.com/Jacob-Hollis/portfolio-website
+CPU Monitor,Built in Java using Netbeans and Scene Builder. Can calculate things such as CPU usage and memory usage.,Java,,,https://github.com/Jacob-Hollis/CPU-Monitor,https://github.com/Jacob-Hollis/CPU-Monitor
+Sarcastic Brewing Website,A stylized interactive website of a beer brewing company built with React and SCSS., React.js,SCSS,,https://github.com/Jacob-Hollis/sarcastic-brewing-website,https://github.com/Jacob-Hollis/sarcastic-brewing-website
+Selenium Scraper Concept,Web scraper built in Python extended by Django and using Selenium for scraping listing data from Airbnb.,Python,Django,Selenium,https://github.com/Jacob-Hollis/scraper-selenium-concept,https://github.com/Jacob-Hollis/scraper-selenium-concept

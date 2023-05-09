@@ -12,3 +12,4 @@ sqlparse==0.4.4
 tzdata==2023.3
 uWSGI==2.0.21
 psycopg2>=2.8.6,<2.9
+django-extensions==3.2.1
