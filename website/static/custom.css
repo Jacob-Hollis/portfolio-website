@@ -2,7 +2,7 @@ body {
   background: #17171F;
 }
 .container .bio {
-  width: 30vw;
+  max-width: 80vh;
   color: #7e8ba5;
   font-size: large;
   padding-top: 1em;
@@ -60,7 +60,7 @@ body {
 }
 .jumbotron {
   background: #17171F;
-  padding-top: 10vh;
+  padding-top: 1vh;
 }
 .jumbotron h1 {
   color: white;
@@ -72,13 +72,9 @@ body {
 .jumbotron hr {
   border-top: 1px solid white;
 }
-.home-buttons-first {
-  padding-top: 2em;
-  padding-left: 1em;
-}
 .home-buttons {
   padding-top: 2em;
-  padding-left: 5em;
+  padding-right: 2em;
 }
 .profile-pic {
   padding-top: 2em;
