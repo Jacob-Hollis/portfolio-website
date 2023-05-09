@@ -2,11 +2,15 @@ body {
   background: #17171F;
 }
 .container .bio {
-  max-width: 80vh;
   color: #7e8ba5;
   font-size: large;
   padding-top: 1em;
 }
+.container .bio-body {
+  width: 80%; 
+  margin: 0 auto;
+}
+
 .container .bio span {
   color: #71D6C8;
 }
@@ -77,13 +81,25 @@ li > a:hover:after{
   padding-top: 2em;
   padding-right: 2em;
 }
+
 .profile-pic {
-  padding-top: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
+
 .profile-pic img {
   border-style: groove;
   border-color: #71D6C8;
+  width: 20vw;
 }
+
+@media only screen 
+and (min-width : 300px) {
+  .profile-pic img {
+    width: 30vh;
+  }
+}
+
 .other-button {
   padding-top: 2em;
 }
@@ -186,9 +202,6 @@ li > a:hover:after{
   transform-origin: left right;
   transform: translateX(-9px);
   transition: 0.2s ease-in-out;
-}
-.btn-iconed:hover {
-  /** -- Span on Hover properties -- **/
 }
 .btn-iconed:hover [class~=oi]::before {
   opacity: 1;
