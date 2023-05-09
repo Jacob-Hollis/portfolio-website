@@ -4,8 +4,9 @@ Built with:
 [![](https://skillicons.dev/icons?i=postgres)](https://skillicons.dev)
 
 ## Overview
-This is the first iteration of my personal website. I chose Django for two reasons, the first being to extend my knowledge of Python on the front end. My other reason was I wanted to use a frontend framework that was clean and data-driven. The dev and prod environments are encapsulated in Docker containers.
+This is the first iteration of my personal website. I chose Django for two reasons, the first being to extend my knowledge of Python on the front end. My other reason was I wanted to use a frontend framework that was clean and data-driven. The dev and prod environments are encapsulated in Docker containers.  
 
+You can view it [here](https://jacob-hollis.com)
 
 ## System Requirements
 - latest version of Python
