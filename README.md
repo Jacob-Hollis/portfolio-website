@@ -1,5 +1,7 @@
 Built with Django  
 [![](https://skillicons.dev/icons?i=django)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=docker)](https://skillicons.dev)
+[![](https://skillicons.dev/icons?i=postgres)](https://skillicons.dev)
 
 ## Overview
 The dev and production environments are encapsulated in Docker containers. Thus, testing and deployments use Docker Compose.
@@ -31,12 +33,9 @@ Please also note that this is not a boilerplate project. I did not intend this t
     - run "docker-compose -f docker-compose.deploy.yml up -d"
         - use the -d prefix to run detached, although not strictly necessary
     - (Optional) run "docker-compose -f docker-compose.deploy.yml exec app python manage.py runscript load"
-        - database records are imported via csv
-        - this command runs a script to copy the data from csv to database, so only run if you have new data or you rebuilt the container
+        - Postgres database records are imported via csv
+        - this command runs a script (load.py) to copy the data from csv to database, so only run if you have new data or you rebuilt the container
 - I used [this](https://londonappdeveloper.com/django-docker-deployment-with-https-using-letsencrypt/) documentation to help me get set up with the deployment process.
-
-
-
 
 
 
