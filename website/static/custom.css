@@ -21,7 +21,6 @@ body {
   color: #7e8ba5;
   font-size: large;
   padding-top: 1em;
-  padding-left: 2em;
 }
 .container .recent-skills-header span {
   color: #71D6C8;
@@ -107,7 +106,7 @@ and (min-width : 300px) {
   font-size: 5em;
 }
 .skills-col {
-  padding-top: 2em;
+  margin: 2em;
 }
 .card {
   background-color: #112240;
