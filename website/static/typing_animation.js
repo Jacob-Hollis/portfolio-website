@@ -38,7 +38,7 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
-  if(textArray.length) setTimeout(type, newTextDelay);
+  if(textArray.length && cursorSpan !== null) setTimeout(type, newTextDelay);
 });
 
 // end.. typing animation ---
