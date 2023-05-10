@@ -9,6 +9,22 @@
             </div>
         </div>
         <div class="row" style="padding-top: 2em">
+            <div class="col">
+                <p class="bio">If you have questions about any of my projects, feel free to contact me:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="text-left col-lf-1">
+                    <a href="{% url 'contact' %}">
+                      <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'contact' %}">
+                        <span class="spn">Contact</span> <i class="fa fa-arrow-right"></i>
+                      </button>
+                    </a>
+                  </div>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 2em">
             {% for project in projects %}
             <div class="col-md-4" style="padding-top: 2em">
                 <div class="card mb-4 h-100" style="background-color: #112240;">
