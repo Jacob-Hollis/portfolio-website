@@ -5,13 +5,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="display-4">Projects</h1>
+                <h1 class="display-4 text-center">Projects</h1>
             </div>
         </div>
         <div class="row" style="padding-top: 2em">
             {% for project in projects %}
-            <div class="col-md-4">
-                <div class="card mb-4" style="background-color: #112240;">
+            <div class="col-md-4" style="padding-top: 2em">
+                <div class="card mb-4 h-100" style="background-color: #112240;">
                     <div class="card-header border-0" style="background-color: #112240;">
                         <div class="row" style="padding-top: 0.5em">
                             <div class="col">
@@ -31,7 +31,7 @@
                             <div class="col-2">
                                 <a href="{{ project.githublink }}" target="_blank" rel="noopener noreferrer">
                                     <button class="float-right project-link" style="color: #7e8ba5; border: none; background: none;" role="button">
-                                        <i class="fa-brands fa-github" style="font-size:1.3em;"></i>
+                                        <i class="fa-brands fa-github project-github-button" style="font-size:1.3em;"></i>
                                     </button>
                                 </a>
                             </div>

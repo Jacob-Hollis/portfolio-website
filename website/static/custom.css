@@ -114,22 +114,8 @@ and (min-width : 300px) {
 .fa-arrow-up-right-from-square:hover {
   color: #71D6C8;
 }
-.fa-github:hover {
+.project-github-button:hover {
   color: #71D6C8;
-}
-.fa-envelope {
-  transition: transform 0.2s ease;
-}
-.fa-envelope:hover {
-  opacity: 0.5;
-  transform: translateY(-10px);
-}
-.fa-linkedin {
-  transition: transform 0.2s ease;
-}
-.fa-linkedin:hover {
-  opacity: 0.5;
-  transform: translateY(-10px);
 }
 .card:hover {
   transform: translate(0px, -5px);
@@ -137,6 +123,22 @@ and (min-width : 300px) {
 .card {
   transition: 0.3s;
 }
+.contact-button{
+  transition: transform 0.2s ease;
+}
+.contact-button:hover {
+  opacity: 0.5;
+  transform: translateY(-10px);
+}
+.mobile-line-break{
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .mobile-line-break {
+    display: block;
+  }
+}
+
 /** ----------------------- typing animation ----------------------- **/
 .typing-container {
   padding-top: 1vh;
