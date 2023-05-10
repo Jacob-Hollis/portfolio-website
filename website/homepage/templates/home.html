@@ -7,27 +7,27 @@
     <div class="display-4 typing-container">
         <p>I'm a <br class="mobile-line-break"><span class="typed-text"></span><span class="cursor">&nbsp;</span><br class="mobile-line-break"> Software Engineer</p>
     </div>
-    <div>
+    <div class="bio-div">
       <p class="bio">As someone who is always looking to solve a problem, my mission is building practical software solutions that transform and improve lives.
     </div>
     <div class="row">
       <div class="home-buttons col-md-4 col-sm-6">
-        <a href="{% url 'about' %}">
-          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'about' %}">
+        <a href="{% url 'about' %}" class="text-decoration-none">
+          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning btn-block" role="button" href="{% url 'about' %}">
             <span class="spn">About</span> <i class="fa fa-arrow-right"></i>
           </button>
         </a>
       </div>
       <div class="home-buttons col-md-4 hidden-xs hidden-sm">
-        <a href="{% url 'skills' %}">
-          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'skills' %}">
+        <a href="{% url 'skills' %}" class="text-decoration-none">
+          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning btn-block" role="button" href="{% url 'skills' %}">
             <span class="spn">Skills</span> <i class="fa fa-arrow-right"></i>
           </button>
         </a>
       </div>
       <div class="home-buttons col-md-4 col-sm-6">
-        <a href="{% url 'projects' %}">
-          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning" role="button" href="{% url 'projects' %}">
+        <a href="{% url 'projects' %}" class="text-decoration-none">
+          <button class="btn btn-iconed btn-lg btn-rounded btn-outline-warning btn-block" role="button" href="{% url 'projects' %}">
             <span class="spn">Projects</span> <i class="fa fa-arrow-right"></i>
           </button>
         </a>
