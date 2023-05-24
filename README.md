@@ -25,7 +25,7 @@ Please also note that this is not a boilerplate project. I did not intend this t
 - I used an AWS EC2 Linux instance to host. You can use whatever cloud provider you wish provided it supports Docker images.
 - Steps to deploy on instance:
     - clone from Github or pull changes once cloned
-    - run "docker system prune -a"
+    - run ``` docker system prune -a ```
         - this is just cleanup beforehand, but you can limit to the specific images/containers if you wish
     - run "docker-compose -f docker-compose.deploy.yml run --rm certbot /opt/certify-init.sh"
     - (Optional) run "docker-compose -f docker-compose.deploy.yml exec app python manage.py collectstatic --no-input --clear"
